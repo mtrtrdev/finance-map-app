@@ -1,0 +1,44 @@
+# node_modules ディレクトリは依存パッケージなのでGit管理不要
+node_modules/
+
+# ビルド生成物や一時ファイル
+lib/
+dist/
+build/
+*.log
+.DS_Store
+*.tmp
+*.cache
+
+# Firebaseサービスアカウントの秘密鍵ファイル（漏洩厳禁）
+serviceAccountKey.json
+
+# 環境変数ファイル（APIキーや秘密情報を含む場合が多い）
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# テストやカバレッジ関連
+coverage/
+.nyc_output/
+jest.config.js
+test-results.xml
+
+# functions/.gitignore
+node_modules/
+lib/      # TypeScriptを使用している場合やビルド出力
+dist/     # ビルド出力
+.env      # Alpha Vantage APIキーなど
+.env.*    # その他の環境変数ファイル
+serviceAccountKey.json # Firebase Admin SDKの秘密鍵
+firebase-debug.log
+firebase-debug.*.log
+firebase-error.log
+firebase.json.backup
+# VSCode関連
+.vscode/
+# OS固有ファイル
+Thumbs.db
+# End of Selection
